@@ -1,0 +1,136 @@
+<html>
+    <center>
+    <body bgcolor="yellow">
+    no1<input type="number" id="n1">
+        <br><br>
+    no2<input type="number" id="n2">
+        <br><br>
+    result<input type="number" id="re">
+        <br><br>   
+    <br><br>
+    <input type="submit" onclick=add() value="Addition">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" onclick=substract() value="Substraction">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" onclick=multiply() value="multiplication">&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="submit" onclick=divide() value="Division">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" onclick=greater() value="Greater">&nbsp;&nbsp;&nbsp;&nbsp;
+     <script>
+        function add()
+         {
+             
+             let v1;
+             let v2;
+             let r;
+              v1=Number(document.getElementById("n1").value); 
+              v2=Number(document.getElementById("n2").value);
+              r=document.getElementById("re").value;
+             
+             if(v1==0 || v2==0)
+                 {
+                     alert("insert input");
+                 }
+             else
+                 {
+             r=v1+v2;
+            // document.write("Addition is := "+(v1+v2));
+             alert("addtion is"+(v1+v2));
+                 }
+         }
+          function substract()
+         {
+             
+             let v1;
+             let v2;
+             let r;
+              v1=document.getElementById("n1").value; 
+              v2=document.getElementById("n2").value;
+              r=document.getElementById("re").value;
+             
+               
+             if(v1==0 || v2==0)
+               {
+                     alert("please enter r");
+                 }
+             else
+                 {
+             
+                         r=v1-v2;
+            // document.write("Addition is := "+(v1+v2));
+                     alert("substraction is"+(v1-v2));
+                 }
+         }
+         function multiply()
+         {
+             
+             let v1;
+             let v2;
+             let r;
+              v1=document.getElementById("n1").value; 
+              v2=document.getElementById("n2").value;
+              r=document.getElementById("re").value;
+             
+               
+             if(v1==0 || v2==0)
+               {
+                     alert("please enter r");
+                 }
+             else
+                 {
+             
+             r=v1*v2;
+            // document.write("Addition is := "+(v1+v2));
+             alert("substraction is"+(v1*v2));
+                 }
+         }
+          function divide()
+         {
+             
+             let v1;
+             let v2;
+             let r;
+              v1=document.getElementById("n1").value; 
+              v2=document.getElementById("n2").value;
+              r=document.getElementById("re").value;
+             
+               
+             if(v1==0 || v2==0)
+               {
+                     alert("please enter r");
+                 }
+             else
+                 {
+             
+             r=v1/v2;
+            // document.write("Addition is := "+(v1+v2));
+             alert("substraction is"+(v1/v2));
+                 }
+         }
+           function greater()
+         {
+             
+             let v1;
+             let v2;
+             let r;
+              v1=document.getElementById("n1").value; 
+              v2=document.getElementById("n2").value;
+              r=document.getElementById("re").value;
+             
+               
+             if(v1>v2)
+               {
+                     alert("V1 is greater");
+                    document.write("V1 is greater := "+v1);
+                 }
+            else
+            {
+                alert("V2 is greater");
+                 document.write("V2 is greater := "+v2);
+            } 
+            
+         }
+         
+        </script>   
+    
+    
+    </body>
+    </center>
+</html>

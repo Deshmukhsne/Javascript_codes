@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Calculator</title> 
+<style>
+input[type=button]
+    {
+        width:100px;
+        height:60px;
+        background-color: sandybrown;
+        color: Black;
+        border: 2px solid brown;
+        text-decoration-color: black;
+    }
+</style>
+</head>
+<body bgcolor="yellow">
+    <center>
+        <h1>
+    <p id="p1">
+        ..!!!!!........Value of a is 20 and b is 2.......!!!!!!!..<br>
+       ....Lets perform the Calculation.......
+    </p>
+        </h1>
+    <br>
+    <br>
+    <input type="button" value="Add" onclick=Addition() onkeydown=error()> &nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="button" value="Substract" onclick=Sub() onkeydown=error()>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="button" value="Multiply" onclick=Mul() onkeydown=error()>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="button" value="Divide" onclick=Div()   onkeydown=error()  >
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+    <script>
+        let a=20;
+        let b=2;
+function Addition()
+    {
+       document.getElementById("p1").innerHTML="The Addition value is := "+(a+b);
+    }
+function Sub()
+        {
+            document.getElementById("p1").innerHTML="The Substraction value is := "+(a-b);
+        }
+function Mul()
+        {
+            document.getElementById("p1").innerHTML="The Multiplication value is := "+(a*b);
+        }
+function Div()
+        {
+            document.getElementById("p1").innerHTML="The Division value is := "+(a/b);
+        }
+function error()
+        {
+            alert("Please press Operation Button");
+        }
+    </script>
+    </center>
+    </body>
+</html>
